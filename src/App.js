@@ -24,7 +24,7 @@ function App() {
           <ToggleButton value="web">Periyar</ToggleButton>
         </Link>
 
-        <Link to="/jounalism">
+        <Link to="/jounalism" state={{Name:'viswa'}}>
           <ToggleButton value="android">Journalism</ToggleButton>
         </Link>
         <ToggleButton value="ios">iOS</ToggleButton>
@@ -37,4 +37,4 @@ function App() {
   );
 }
 
-export default App;
+export default  App;

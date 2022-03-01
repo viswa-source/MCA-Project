@@ -1,6 +1,8 @@
 import React from "react";
+import { useLocation } from "react-router-dom";
 
-export default function Journalism() {
+export default function Journalism(props) {
+  console.log(useLocation().state);
   return (
     <div className="container">
       <div className="text_container">

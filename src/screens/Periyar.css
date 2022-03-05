@@ -31,8 +31,8 @@ body {
       center / cover;
 }
 #all-pages .page:nth-child(3) {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(https://raw.githubusercontent.com/Juuggo/FELab/master/fullscreen-scroll/images/bg3.jpg)
+  background: linear-gradient(rgb(255, 255, 255), rgb(255, 254, 254)),
+    
       center / cover;
 }
 #all-pages .page:nth-child(4) {
@@ -56,6 +56,12 @@ body {
   opacity: 1;
   visibility: visible;
 }
+
+@media only screen and (max-width: 400px) {
+  .col-lg-3{
+    font-size:1.4vh
+  }
+}
 .text-container h2 {
   font-size: 6vh;
   text-transform: uppercase;
@@ -68,6 +74,8 @@ body {
   position: fixed;
   top: 50%;
   right: 20px;
+ 
+  
   transform: translateY(-50%);
 }
 .nav-dot {
@@ -76,20 +84,26 @@ body {
   padding: 20px 0px;
   margin: auto;
 }
-.nav-dot span {
+.nav-dot span{
   display: block;
+  /* border:1px solid blue; */
+
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: white;
+  background: rgb(255, 10, 10);
   transition: all 200ms ease;
   margin: auto;
+  
 }
 .nav-dot span:hover {
   width: 12px;
   height: 12px;
+  
+
 }
 .nav-dot.dot-active span {
   width: 15px;
+
   height: 15px;
 }

@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import NavBar from "../components/NavBar";
+import RoundCard from "../components/RoundCard";
 import "./Periyar.css";
 
 export default function Periyar() {
@@ -88,9 +89,8 @@ export default function Periyar() {
       this.navDots = Array.prototype.slice.call(navDots);
       this.navDots[0].classList.add("dot-active");
       this.navDots.forEach((e, index) => {
-       
         e.addEventListener("click", (event) => {
-           this.scrollTo(index-3);
+          this.scrollTo(index - 3);
           // this.navDots.forEach((e) => {
           //   e.classList.remove("dot-active");
           // });
@@ -153,6 +153,34 @@ export default function Periyar() {
     var s = new ScrollPages(1, 4, document.getElementById("all-pages"));
     s.init();
   });
+  const [digi, setdigi] = useState([
+    {
+      text: "UGC",
+      img: require("../images/UGC.png"),
+      to:'https://www.periyaruniversity.ac.in/UGC.php'
+    },
+    {
+      text: "NAD Cell",
+      img: require("../images/DGL.jpg"),
+      to:'https://nad.digilocker.gov.in/'
+    },
+    {
+      text: "Swayam",
+      img: require("../images/swayam.jpg"),
+      to:'https://www.swayam.gov.in/'
+    },
+    {
+      text: "Journal",
+      img: require("../images/IJC.png"),
+      to:'https://www.periyaruniversity.ac.in/ijcii/home.html'
+    },
+    {
+      text: "DDU-GKY",
+      img: require("../images/DDUGKY.png"),
+      to:'https://www.periyaruniversity.ac.in/DDUGKY/'
+    },
+   
+  ]);
   return (
     <>
       <NavBar />
@@ -186,34 +214,73 @@ export default function Periyar() {
                 Reformer E.V. Ramasamy, affectionately called as “Thanthai
                 Periyar”. The University aims at developing knowledge in various
                 fields to realize the maxim inscribed in the logo “Arival
-                Vilayum Ulagu” (Wisdom Maketh the World).  The University
-                has 27 departments and 113 affiliated colleges. The Choice Based
-                Credit System (CBCS) was introduced for various programmes
-                offered by the University from 2008-09 onwards. From 2009-10
-                onwards, the University has been offering certificate courses to
-                cater to the current needs of the public. Periyar University
-                provides the Student Support Services such as Library, National
-                Service Scheme, Youth Red Cross, Women’s Welfare Centre and
-                various avenues for sports and games.
+                Vilayum Ulagu” (Wisdom Maketh the World). The University has 27
+                departments and 113 affiliated colleges. The Choice Based Credit
+                System (CBCS) was introduced for various programmes offered by
+                the University from 2008-09 onwards. From 2009-10 onwards, the
+                University has been offering certificate courses to cater to the
+                current needs of the public. Periyar University provides the
+                Student Support Services such as Library, National Service
+                Scheme, Youth Red Cross, Women’s Welfare Centre and various
+                avenues for sports and games.
               </p>
             </div>
           </section>
           <section className="page">
             <div className="text-container">
-              <h2>The third page</h2>
-              <p>
-                Try: Scroll the page; Click the white dots on the right side;
-                Resize the window; View it on a mobile browser.
-              </p>
+              <h1 style={{color:'grey',marginBottom:'7%'}}>Digital Actions</h1>
+              <div style={{display:'flex',width:'100%',justifyContent:'space-around',flexWrap:'wrap'}}>
+                {digi.map((el) => (
+                  <RoundCard to={el.to} text={el.text} img={el.img} />
+                ))}
+              </div>
             </div>
           </section>
-          <section className="page">
+          <section className="page" >
             <div className="text-container">
-              <h2>The third page</h2>
-              <p>
-                Try: Scroll the page; Click the white dots on the right side;
-                Resize the window; View it on a mobile browser.
-              </p>
+
+
+<div style={{display:'flex',justifyContent:'space-around',flexWrap:'wrap'}}>
+              <div class="col-lg-3" >
+      <h5 class="text-warning text-center">Academic</h5>
+      <ul class="nav flex-column pl-5">
+        <li class="nav-item"> <a class="nav-link   text-white" href="Affiliated_Colleges.php">Affiliated Colleges</a> </li>
+        <li class="nav-item"> <a class="nav-link   text-white" href="Centres.php">Centres &amp; Cells</a> </li>
+        <li class="nav-item"> <a class="nav-link   text-white" href="Community_Colleges.php">Community Colleges</a> </li>
+        <li class="nav-item"> <a class="nav-link   text-white" href="Dept.php">Departments</a> </li>
+        <li class="nav-item"> <a class="nav-link   text-white" href="AboutPRIDE.php">Distance Education</a> </li>
+        <li class="nav-item"> <a class="nav-link   text-white" href="dept/PG_Extension_Centre.php">PG Extension Centre</a> </li>
+        <li class="nav-item"> <a class="nav-link   text-white" href="research_centres.php">Research Centres</a> </li>
+      </ul>
+    </div>
+
+    <div class="col-lg-3">
+      <h5 class="text-warning text-right">Quick Links</h5>
+      <ul class="nav flex-column pl-5">
+        <li class="nav-item"> <a class="nav-link   text-white" href="https://www.periyaruniversity.ac.in/Major_Achievements.php">Achievements</a></li>
+        <li class="nav-item"> <a class="nav-link   text-white" href="Alumni.php">Alumni </a></li>
+        <li class="nav-item"> <a class="nav-link   text-white" href="Antirag.php">Anti Ragging</a> </li>
+        <li class="nav-item"> <a class="nav-link   text-white" href="Download.php">Downloads </a></li>
+        <li class="nav-item"> <a class="nav-link   text-white" href="esanad.php">e - Sanad Services</a> </li>
+        <li class="nav-item"> <a class="nav-link   text-white" href="Facilities.php">Facilities</a></li>
+        <li class="nav-item"> <a class="nav-link   text-white" href="http://coe.periyaruniversity.ac.in/periyar-univ-practical/">Login </a> </li>
+      </ul>
+    </div>
+
+    <div class="col-lg-3">
+      <h5 class="text-warning text-center">Our Speciality</h5>
+      <ul class="nav flex-column pl-5">
+        <li class="nav-item"> <a class="nav-link   text-white" href="Dept/ped.php/">Physical Education</a></li>
+        <li class="nav-item"> <a class="nav-link   text-white" href="Placement.php">Placement</a></li>
+        <li class="nav-item"> <a class="nav-link   text-white" href="https://www.periyaruniversity.ac.in/Documents/2021/Publications.pdf">Publication </a> </li>
+        <li class="nav-item"> <a class="nav-link   text-white" href="Research.php">Research</a></li>
+		<li class="nav-item"> <a class="nav-link   text-white" href="http://14.139.186.91/pu_uam_online/?welcome=auth&amp;p=student">Students Portal</a>
+        </li><li class="nav-item"> <a class="nav-link   text-white" href="https://www.periyaruniversity.ac.in/syllabi.php">Syllabus</a> </li>
+        <li class="nav-item"><a class="nav-link  text-white" href="https://www.periyaruniversity.ac.in/Documents/2021/pride/UICP_List.pdf">UICP Institute List</a> </li>
+     </ul>
+    </div>
+
+    </div>
             </div>
           </section>
         </div>

@@ -3,7 +3,6 @@ import "./RoundCard.css";
 import { Link } from "react-router-dom";
 
 export default function RoundCard(props) {
-  console.log(props);
   return (
     <>
       <a

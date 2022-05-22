@@ -1,0 +1,12 @@
+a {
+  color: black;
+  text-decoration: none;
+}
+#carusal_h1 > a {
+  font-size: 3vmin;
+}
+
+/* marquee>table>tbody>tr>td>div>ul>li>a{
+    text-decoration: none;
+
+} */

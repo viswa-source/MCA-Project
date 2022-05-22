@@ -23,11 +23,11 @@ body {
 }
 #all-pages .page:nth-child(1) {
   background: linear-gradient(rgba(0, 0, 0, 0.733), rgba(0, 0, 0, 0.4)),
-    url("../images/periyar.jpg") center / cover;
+    url("../../images/periyar.jpg") center / cover;
 }
 #all-pages .page:nth-child(2) {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("../images/PUBG.jpg")
+    url("../../images/PUBG.jpg")
       center / cover;
 }
 #all-pages .page:nth-child(3) {

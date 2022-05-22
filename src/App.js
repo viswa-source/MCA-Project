@@ -6,6 +6,9 @@ import { Routes, Route, Link } from "react-router-dom";
 import ToggleButton from "@mui/material/ToggleButton";
 import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
 import Journalism from "./screens/Journalism";
+import ITEC from "./screens/ITEC";
+import TamilSite from "./screens/TamilSite";
+import Discord from "./screens/Discord";
 
 function App() {
   const [alignment, setAlignment] = React.useState("web");
@@ -27,11 +30,23 @@ function App() {
         <Link to="/jounalism">
           <ToggleButton value="android">Journalism</ToggleButton>
         </Link>
-        <ToggleButton value="ios">iOS</ToggleButton>
+        <Link  to="/ITEC">
+        <ToggleButton value="ios">ITEC</ToggleButton>
+        </Link>
+        <Link  to="/TamilUnicode">
+        <ToggleButton value="ios">TamilSite</ToggleButton>
+        </Link>
+        <Link  to="/Discord">
+        <ToggleButton value="ios">Discord</ToggleButton>
+        </Link>
       </ToggleButtonGroup>
       <Routes>
         <Route path="/" element={<Periyar />} />
         <Route path="/jounalism" element={<Journalism />} />
+        <Route path="/ITEC" element={<ITEC/>} />
+        <Route path="/Discord" element={<Discord/>} />
+
+
       </Routes>
     </div>
   );

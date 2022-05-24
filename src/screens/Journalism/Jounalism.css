@@ -11,7 +11,7 @@ body {
   width: 100%;
   height: 100%;
 }
-#all-pages {
+#all-pages1 {
   position: relative;
   top: 0;
   transition: all 800ms ease;
@@ -21,21 +21,21 @@ body {
   height: 100%;
   width: 100%;
 }
-#all-pages .page:nth-child(1) {
+#all-pages1 .page:nth-child(1) {
   background: linear-gradient(rgba(0, 0, 0, 0.733), rgba(0, 0, 0, 0.4)),
     url("../../images/journalism.png") center / cover;
 }
-#all-pages .page:nth-child(2) {
+#all-pages1 .page:nth-child(2) {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("../../images/journalism2.jpg")
       center / cover;
 }
-#all-pages .page:nth-child(3) {
+#all-pages1 .page:nth-child(3) {
   background: linear-gradient(rgb(255, 255, 255), rgb(255, 254, 254)),
   url("../../images/journalism4.jpg")
       center / cover;
 }
-#all-pages .page:nth-child(4) {
+#all-pages1 .page:nth-child(4) {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("../../images/journalism3.jpg")
       center / cover;

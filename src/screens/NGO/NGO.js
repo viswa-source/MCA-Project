@@ -1,10 +1,70 @@
-import React, { useEffect, useState } from "react";
-import RoundCard from "./RoundCard";
-export default function Template(props) {
-  // Implemetion reference: https://juejin.im/post/5aeef41cf265da0ba0630de0
-  // Background image from free image website: https://pixabay.com/
+import React,{useEffect,useState} from "react";
+import RoundCard from "../../components/RoundCard";
+
+import "./NGO.css";
+
+export default function NGO() {
+  var props = {
+    title1:"non-governmental organization",
+      para1:"  NGO stands for non-governmental organization. While there is no universally agreed-upon definition of an NGO, typically it is a voluntary group or institution with a social mission, which operates independently from the government. NGOs or similar organizations exist in all parts of the world",
+      title2:"About non-governmental organization",
+      para2:"NGO stands for non-governmental organization. While there is no universally agreed-upon definition of an NGO, typically it is a voluntary group or institution with a social mission, which operates independently from the government. NGOs or similar organizations exist in all parts of the world" ,
+      title3:"NGO categories",
+      cardData:[
+        {
+          text: "Community-based Organizations",
+          img: "https://www.ngoregistration.org/wp-content/uploads/2018/06/NGO.jpg",
+          to: "https://www.universalclass.com/articles/business/impact-of-community-based-organizations.htm",
+        },
+        {
+          text: "Nonprofit organization",
+          img: "https://upvey.com/wp-content/uploads/2020/04/NGO-Hindi.jpg",
+          to: "https://en.wikipedia.org/wiki/Nonprofit_organization",
+        },
+        {
+          text: "Citywide Organizations",
+          img: "https://image.shutterstock.com/image-photo/concept-ngo-nongovernmental-organization-charity-600w-2079594607.jpg",
+          to: "https://www.worldbank.org/en/topic/sanitation/brief/citywide-inclusive-sanitation",
+        },
+        {
+          text: "Empowering Orientation",
+          img: "https://im.hunt.in/cg/City-Guide/ngo_logo.jpg",
+          to: "https://www.gdrc.org/ngo/ngo-types.html",
+        },
+        {
+          text: "Service Orientation",
+          img: "https://image.shutterstock.com/image-photo/juridical-concept-about-customer-orientation-600w-1905594391.jpg",
+          to: "https://en.wikipedia.org/wiki/Service-orientation",
+        },
+      ],
+      footerTitle1:"Academic",
+      footerTitle1Data:[
+        "K.C. Mahindra Education Trust",
+        "Udaan India Foundation",
+        "Pi Jam Foundation.",
+        "Vanavil Trust",
+        "Vidya and Child.",
+      ],
+      footerTitle2:"Quick Links",
+      footerTitle2Data:[
+        " Charitable Orientation",
+        " Service Orientation",
+        " Participatory Orientation",
+        " Downloads",
+        " Empowering Orientation",
+        " Citywide Organizations.",
+      ],
+      footerTitle3:"Our Speciality",
+      footerTitle3Data:[
+        " membership dues",
+        " private donations",
+        " the sale of goods and services",
+        " grants from other non-profits",
+        " government funding for NGOs",
+      ]
+  };
   useEffect(() => {
-    var s = new ScrollPages(1, 4, document.getElementById("all-pages"));
+    var s = new ScrollPages(1, 4, document.getElementById("all-pages9"));
     s.init();
   });
   const helper = {
@@ -151,16 +211,15 @@ export default function Template(props) {
   }
 
   document.addEventListener("DOMContentLoaded", function () {
-    var s = new ScrollPages(1, 4, document.getElementById("all-pages"));
+    var s = new ScrollPages(1, 4, document.getElementById("all-pages9"));
     s.init();
   });
   const [digi, setdigi] = useState(props.cardData);
-
   return (
     <>
       {/* <NavBar /> */}
       <div className="fullscreen-container">
-        <div id="all-pages">
+        <div id="all-pages9">
           <section className="page">
             <div className="text-container">
               <h2>{props.title1}</h2>

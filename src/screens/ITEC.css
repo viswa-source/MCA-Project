@@ -5,7 +5,17 @@ a {
 #carusal_h1 > a {
   font-size: 3vmin;
 }
+#CardWrap_1{
+  flex: 1;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
 
+}
+
+.ul_remove{
+list-style: none;
+}
 /* marquee>table>tbody>tr>td>div>ul>li>a{
     text-decoration: none;
 

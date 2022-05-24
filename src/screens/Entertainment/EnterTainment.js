@@ -1,10 +1,72 @@
-import React, { useEffect, useState } from "react";
-import RoundCard from "./RoundCard";
-export default function Template(props) {
-  // Implemetion reference: https://juejin.im/post/5aeef41cf265da0ba0630de0
-  // Background image from free image website: https://pixabay.com/
+import React,{useEffect,useState} from "react";
+import RoundCard from "../../components/RoundCard";
+
+import "./EnterTainment.css";
+
+export default function Entertainment() {
+    
+    var props = {
+        title1: "Entertainment",
+        para1:
+          "  Entertainment is a form of activity that holds the attention and interest of an audience or gives pleasure and delight. It can be an idea or a task, but is more likely to be one of the activities or events that have developed over thousands of years specifically for the purpose of keeping an audience's attention.",
+        title2: "About Entertainment",
+        para2:
+          "Entertainment is a form of activity that holds the attention and interest of an audience or gives pleasure and delight. It can be an idea or a task, but is more likely to be one of the activities or events that have developed over thousands of years specifically for the purpose of keeping an audience's attention.",
+        title3: "Entertainment Types",
+        cardData: [
+          {
+            text: "Amusement parks.",
+            img: "https://img.traveltriangle.com/blog/wp-content/uploads/2018/10/cover-parks.jpg",
+            to: "https://en.wikipedia.org/wiki/Park",
+          },
+          {
+            text: "Festivals.",
+            img: "https://img.traveltriangle.com/blog/wp-content/uploads/2017/12/festivals-of-india-blog-cover.jpg",
+            to: "https://en.wikipedia.org/wiki/Festival",
+          },
+          {
+            text: "Cricket  ",
+            img: "https://www.ft.com/__origami/service/image/v2/images/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2Fa646c9b7-13a5-4420-ab42-13ac0cf8a158.jpg?dpr=1&fit=scale-down&source=next&width=700",
+            to: "https://www.cricbuzz.com/cricket-match/live-scores",
+          },
+          {
+            text: "Mobile games",
+            img: "https://techcrunch.com/wp-content/uploads/2017/06/mobile-games-sensor-tower.jpg?w=1390&crop=1",
+            to: "https://play.google.com/store/apps/details?id=com.tencent.ig&hl=en_US&gl=US",
+          },
+          {
+            text: "Watching television",
+            img: "https://www.thoughtco.com/thmb/Sur4fPezzWRVzJFmmFVWFI2kuAw=/768x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-680882197-58f4d5d65f9b582c4dd4a776.jpg",
+            to: "https://www.jiotv.com/",
+          },
+        ],
+        footerTitle1: "Academic",
+        footerTitle1Data: [
+          "engage audiences",
+          "introduce ideas",
+          "information and encouraging",
+          "self-assessment",
+          "discussion within their social circles.",
+        ],
+        footerTitle2: "Quick Links",
+        footerTitle2Data: [
+          " Amusement parks",
+          " Fairs",
+          " Festivals",
+          " Traveling carnivals",
+          " Travelling exhibition",
+        ],
+        footerTitle3: "Our Speciality",
+        footerTitle3Data: [
+          "When freely chosen ",
+          " relaxation",
+          " arousal ",
+          " can induce the range of human emotions that enrich daily life",
+          " The emotional and social satisfactions provided by entertainment are supplemented by their impact on executive functioning and health",
+        ],
+      };
   useEffect(() => {
-    var s = new ScrollPages(1, 4, document.getElementById("all-pages"));
+    var s = new ScrollPages(1, 4, document.getElementById("all-pages15"));
     s.init();
   });
   const helper = {
@@ -151,16 +213,15 @@ export default function Template(props) {
   }
 
   document.addEventListener("DOMContentLoaded", function () {
-    var s = new ScrollPages(1, 4, document.getElementById("all-pages"));
+    var s = new ScrollPages(1, 4, document.getElementById("all-pages15"));
     s.init();
   });
   const [digi, setdigi] = useState(props.cardData);
-
   return (
     <>
       {/* <NavBar /> */}
       <div className="fullscreen-container">
-        <div id="all-pages">
+        <div id="all-pages15">
           <section className="page">
             <div className="text-container">
               <h2>{props.title1}</h2>

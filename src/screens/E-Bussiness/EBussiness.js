@@ -1,10 +1,71 @@
-import React, { useEffect, useState } from "react";
-import RoundCard from "./RoundCard";
-export default function Template(props) {
-  // Implemetion reference: https://juejin.im/post/5aeef41cf265da0ba0630de0
-  // Background image from free image website: https://pixabay.com/
+import React,{useEffect,useState} from "react";
+import RoundCard from "../../components/RoundCard";
+
+import "./EBussiness.css";
+
+export default function EBussiness() {
+    
+  var props = {
+    title1:"E-Business Organization",
+      para1:" E-Business (electronic business) is any process that a business organization conducts over a computer-mediated network. Business organizations include any for-profit, governmental, or nonprofit entity. Their processes include production-, customer-, and internal- or management-focused business processes.",
+      title2:"About E-Business organization",
+      para2:"E-Business (electronic business) is any process that a business organization conducts over a computer-mediated network. Business organizations include any for-profit, governmental, or nonprofit entity. Their processes include production-, customer-, and internal- or management-focused business processes." ,
+      title3:"E-Business Organization categories",
+      cardData:[
+        {
+          text: "Business-to-Business (B2B)",
+          img: "https://www.globaltranz.com/wp-content/uploads/shutterstock_428687875-1.jpg",
+          to: "https://www.investopedia.com/terms/b/btob.asp",
+        },
+        {
+          text: "Business-to-Consumer (B2C)",
+          img: "https://pediaa.com/wp-content/uploads/2022/01/B2C-Marketing.jpg",
+          to: "https://www.investopedia.com/terms/b/btoc.asp",
+        },
+        {
+          text: "Consumer-to-Consumer (C2C)",
+          img: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/C2C_logo.png/220px-C2C_logo.png",
+          to: "https://www.masterclass.com/articles/c2c-guide#:~:text=Consumer%20to%20consumer%20(C2C)%20is,is%20conducted%20via%20online%20companies.",
+        },
+        {
+          text: "Consumer-to-Business (C2B)",
+          img: "https://image.shutterstock.com/image-vector/c2b-consumer-business-concept-big-600w-1537932248.jpg",
+          to: "https://en.wikipedia.org/wiki/Consumer-to-business",
+        },
+        {
+          text: "Business-to-Administration (B2A)",
+          img: "https://media-exp1.licdn.com/dms/image/C560BAQHydMW0q3mVnw/company-logo_200_200/0/1644224252956?e=1661385600&v=beta&t=QPFn4NDO2EVpyypaqyQ-6ooWWS761aKk616o-8dr9x0",
+          to: "https://en.wikipedia.org/wiki/Types_of_e-commerce",
+        },
+      ],
+      footerTitle1:"Academic",
+      footerTitle1Data:[
+        "Management Information Systems: Managing the Digital Firm, Laudon and Laudon, Pearson",
+        "Scaling for E-Business, Menasce & Almeida, PHI",
+        "eBusiness & eCommerce – Managing the Digital Value Chain, Meier & Stormer, Springer",
+        "eBook is available in springerlink.com",
+        "Some reference books, Internet Resources, and Research Papers",
+      ],
+      footerTitle2:"Quick Links",
+      footerTitle2Data:[
+        "Business-to-Business (B2B)",
+        "Business-to-Consumer (B2C)",
+        "Consumer-to-Consumer (C2C)",
+        "Consumer-to-Business (C2B)",
+        "Business-to-Administration (B2A)",
+        "Consumer-to-Administration (C2A)",
+      ],
+      footerTitle3:"Our Speciality",
+      footerTitle3Data:[
+        " It is easy to set up.",
+    " There are no geographical boundaries",
+    " Much cheaper than traditional business",
+    " There are flexible business hours.",
+    " Online business receive subsidies from the government.",
+      ]
+  };
   useEffect(() => {
-    var s = new ScrollPages(1, 4, document.getElementById("all-pages"));
+    var s = new ScrollPages(1, 4, document.getElementById("all-pages10"));
     s.init();
   });
   const helper = {
@@ -151,16 +212,15 @@ export default function Template(props) {
   }
 
   document.addEventListener("DOMContentLoaded", function () {
-    var s = new ScrollPages(1, 4, document.getElementById("all-pages"));
+    var s = new ScrollPages(1, 4, document.getElementById("all-pages10"));
     s.init();
   });
   const [digi, setdigi] = useState(props.cardData);
-
   return (
     <>
       {/* <NavBar /> */}
       <div className="fullscreen-container">
-        <div id="all-pages">
+        <div id="all-pages10">
           <section className="page">
             <div className="text-container">
               <h2>{props.title1}</h2>

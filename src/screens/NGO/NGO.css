@@ -11,7 +11,7 @@ body {
     width: 100%;
     height: 100%;
   }
-  #all-pages3 {
+  #all-pages9 {
     position: relative;
     top: 0;
     transition: all 800ms ease;
@@ -21,23 +21,23 @@ body {
     height: 100%;
     width: 100%;
   }
-  #all-pages3 .page:nth-child(1) {
+  #all-pages9 .page:nth-child(1) {
     background: linear-gradient(rgba(0, 0, 0, 0.733), rgba(0, 0, 0, 0.4)),
-      url("https://www.sie.com/tachyon/sites/15/2021/05/SIE-Blog_Featured-Image_Discord.jpg?resize=1088%2C612&crop_strategy=smart&zoom=1") center / cover;
+      url("https://image.shutterstock.com/image-vector/ngo-nongovernmental-organization-concept-keywords-600w-1247512159.jpg") center / cover;
   }
-  #all-pages3 .page:nth-child(2) {
+  #all-pages9 .page:nth-child(2) {
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-      url("https://www.linuxadictos.com/wp-content/uploads/discord-1024x576.jpg.webp")
+      url("https://evodiokaltenecker.com/wp-content/uploads/2019/01/NGO_Wordcloud.jpg")
         center / cover;
   }
-  #all-pages3 .page:nth-child(3) {
+  #all-pages9 .page:nth-child(3) {
     background: linear-gradient(rgb(255, 255, 255), rgb(255, 254, 254)),
-    url("https://cdn2.unrealengine.com/what-is-discord-1920x1080-c3d90ca45f57.jpg")
+    url("../../images/journalism4.jpg")
         center / cover;
   }
-  #all-pages3 .page:nth-child(4) {
+  #all-pages9 .page:nth-child(4) {
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-      url("https://cdn2.unrealengine.com/what-is-discord-1920x1080-c3d90ca45f57.jpg")
+      url("https://cdn2.vectorstock.com/i/1000x1000/18/06/ngo-non-governmental-organization-concept-vector-28621806.jpg")
         center / cover;
   }
   .text-container {

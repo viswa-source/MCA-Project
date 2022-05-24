@@ -1,10 +1,71 @@
-import React, { useEffect, useState } from "react";
-import RoundCard from "./RoundCard";
-export default function Template(props) {
-  // Implemetion reference: https://juejin.im/post/5aeef41cf265da0ba0630de0
-  // Background image from free image website: https://pixabay.com/
+import React,{useEffect,useState} from "react";
+import RoundCard from "../../components/RoundCard";
+
+import "./SearchEngine.css";
+
+export default function SearchEngine() {
+    
+  var props = {
+    title1:"Google",
+      para1:" Google LLC is an American multinational technology company that focuses on artificial intelligence, search engine, online advertising, cloud computing, computer software, quantum computing, e-commerce, and consumer electronics.",
+      title2:"Best Search Engine",
+      para2:"Google is the world’s most popular search engine. It began as a search project in 1996 by Larry Page and Sergey Brin, who were two Ph.D. students at Stanford University. They developed a search engine algorithm that ranked Web pages not just by content and keywords, but by how many other Web pages linked to each page. This strategy produced more useful results than other search engines, and led to a rapid increase in Google’s Web search market share. The Google ranking algorithm was later named “PageRank” and was patented in September of 2001. In only a short time, Google became the number one search engine in the world.According to Google’s website, the company’s mission is to “organize the world’s information and make it universally accessible and useful.” While the Web search remains Google’s primary tool for helping user’s access information, the company offers several other services as well. Some of these include:" ,
+      title3:"Google Products",
+      cardData:[
+        {
+          text: "Youtube",
+          img: "https://yt3.ggpht.com/584JjRp5QMuKbyduM_2k5RlXFqHJtQ0qLIPZpwbUjMJmgzZngHcam5JMuZQxyzGMV5ljwJRl0Q=s900-c-k-c0x00ffffff-no-rj",
+          to: "https://www.youtube.com/",
+        },
+        {
+          text: "Google Drive",
+          img: "https://cdn.icon-icons.com/icons2/1222/PNG/512/1492616974-19-google-drive-data-document-file-safe_83422.png",
+          to: "https://drive.google.com/",
+        },
+        {
+          text: "Google Sheets",
+          img: "https://kstatic.googleusercontent.com/files/adf55cdf4c7f8fb38efbf8df6c2792660fbeff2d05be05f2ec8e9c265a179b51c64b9679d8aee00e09cad19ce419d90a2d999b82cea4200abbe78c73e6bfaacf",
+          to: "https://www.google.com/sheets/about/",
+        },
+        {
+          text: "Gmail",
+          img: "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Gmail.max-500x500.png",
+          to: "https://mail.google.com/",
+        },
+        {
+          text: "Google Meet",
+          img: "https://www.gstatic.com/meet/google_meet_horizontal_wordmark_2020q4_1x_icon_124_40_2373e79660dabbf194273d27aa7ee1f5.png",
+          to: "https://meet.google.com/",
+        },
+      ],
+      footerTitle1:"Products",
+      footerTitle1Data:[
+        "Gmail",
+        "Google Meet",
+        "Google Sheets",
+        "Google Drive",
+        "Youtube",
+      ],
+      footerTitle2:"Communication and publishing toolss",
+      footerTitle2Data:[
+        "Blogger",
+        "Google Chat ",
+        "Google Classroom",
+        "Google Charts",
+        "Google Docs ",
+        "Google Keep ",
+      ],
+      footerTitle3:"Map-related products",
+      footerTitle3Data:[
+        " Google Maps",
+    " Google Earth",
+    " Google Sky",
+    " Google Street View ",
+    " Google Mars.",
+      ]
+  };
   useEffect(() => {
-    var s = new ScrollPages(1, 4, document.getElementById("all-pages"));
+    var s = new ScrollPages(1, 4, document.getElementById("all-pages13"));
     s.init();
   });
   const helper = {
@@ -151,16 +212,15 @@ export default function Template(props) {
   }
 
   document.addEventListener("DOMContentLoaded", function () {
-    var s = new ScrollPages(1, 4, document.getElementById("all-pages"));
+    var s = new ScrollPages(1, 4, document.getElementById("all-pages13"));
     s.init();
   });
   const [digi, setdigi] = useState(props.cardData);
-
   return (
     <>
       {/* <NavBar /> */}
       <div className="fullscreen-container">
-        <div id="all-pages">
+        <div id="all-pages13">
           <section className="page">
             <div className="text-container">
               <h2>{props.title1}</h2>

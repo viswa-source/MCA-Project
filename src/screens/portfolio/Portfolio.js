@@ -5,7 +5,6 @@ export default function Portfolio() {
   return (
     <div>
       {/* Hello world */}
-
       <nav class=" navbar navbar-expand-lg navbar-light bg-dark">
         <div className="container-fluid ">
           <a class="navbar-brand" href="#">
@@ -59,10 +58,9 @@ export default function Portfolio() {
       <header>
         <div className="container">
           <div className="intro-text">
-            <div className="intro-lead-in">Hello EveryBody</div>
-            <div className="intro-heading">Iam Nivetha Jegaraja.</div>
+            <div className="intro-heading">Nivetha Jegaraja</div>
             <a href="#services" className="page-scroll btn btn-xl">
-              Continue Journey
+              Continue 
             </a>
           </div>
         </div>
@@ -326,14 +324,12 @@ export default function Portfolio() {
           </div>
         </div>
       </section>
-     
       <section id="contact">
         <div className="container">
           <div className="row">
             <div className="col-lg-12 text-center">
               <h2 className="section-heading">Contact Me</h2>
-              <h3 className="section-subheading text-muted">
-              </h3>
+              <h3 className="section-subheading text-muted"></h3>
             </div>
           </div>
           <div className="row">
@@ -401,7 +397,6 @@ export default function Portfolio() {
           </div>
         </div>
       </section>
-     
       <div
         className="portfolio-modal modal fade"
         id="portfolioModal1"
@@ -762,6 +757,7 @@ export default function Portfolio() {
           cursor: "pointer",
           backgroundImage: "url(data:image/png",
         }}
-      />    </div>
+      />{" "}
+    </div>
   );
 }
